@@ -2,7 +2,7 @@ var canvas = document.getElementById("mainCanvas");
 var ctx = canvas.getContext("2d");
 function game(){
 document.getElementById("play").style.visibility= "hidden";
-var playerOne = new player(canvas.width/2,canvas.height-65,20,20);
+var playerOne = new player(canvas.width/2,canvas.height-20,20,20);
 var bullets = [];
 var enemies = [];
 var enemySpeed = 1;
@@ -77,7 +77,7 @@ window.addEventListener("keydown",function(event){
 		playerOne.move(10);
 	}
 	if(event.keyCode == 32){
-		var bulletOne = new bullet(playerOne.x + 45, playerOne.y+30, 5, 5);
+		var bulletOne = new bullet(playerOne.x, playerOne.y, 5, 5);
 		bullets.push(bulletOne);
 	}
 });
