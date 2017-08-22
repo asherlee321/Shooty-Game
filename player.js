@@ -6,10 +6,8 @@ function player(x,y,w,h){
 	this.h = h;
 
 	this.show = function(){
-		var image = new Image();
-		image.src = "Images/player.png";
 		ctx.fillStyle = "red";
-		ctx.drawImage(image,this.x,this.y,this.w,this.h);
+		ctx.fillRect(image,this.x,this.y,this.w,this.h);
 	}
 
 	this.move = function(dir){
