@@ -2,7 +2,7 @@ var canvas = document.getElementById("mainCanvas");
 var ctx = canvas.getContext("2d");
 function game(){
 document.getElementById("play").style.visibility= "hidden";
-var playerOne = new player(canvas.width/2,canvas.height-65,100,100);
+var playerOne = new player(canvas.width/2,canvas.height-65,20,20);
 var bullets = [];
 var enemies = [];
 var enemySpeed = 1;
