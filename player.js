@@ -7,7 +7,7 @@ function player(x,y,w,h){
 
 	this.show = function(){
 		ctx.fillStyle = "red";
-		ctx.fillRect(image,this.x,this.y,this.w,this.h);
+		ctx.fillRect(this.x,this.y,this.w,this.h);
 	}
 
 	this.move = function(dir){
